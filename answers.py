@@ -54,9 +54,59 @@ def checkDuplicate(user):
 
 #result for 7
 def same_value(dict1, dict2):
-    for i in dict1:
-        for j in dict2:
-            if i == j:
-                return i
-    return false
-print (same_value('red' 'blue', 'red' 'yelow'))
+    for i in dict1.keys():
+        if i in dict2.keys():
+            return i
+    return False
+
+#result for 8
+def return_list(dict1, dict2):
+    my_list = []
+    for i in dict1.keys():
+        if i in dict2.keys():
+            my_list.append(i)
+    return my_list+i
+#result for 9
+def dict_and_par (my_dict, par):
+    for i in my_dict.keys():
+        if i == par:
+            return  i
+
+#result for 10
+def value_equals_par (my_dict, par):
+    for i in my_dict.values():
+        if i == par:
+            return i
+
+#result for 11
+def return_ordered_list(my_dict):
+    my_list = []
+    for i in my_dict.values():
+        my_list.append(i)
+    my_list.sort()
+    return  my_list
+
+
+#result for 12
+def update_dict(my_dict, par1, par2):
+    a = par2
+    b = par1
+    for i in my_dict.keys():
+        if i == par1:
+            my_dict.update({'': a})
+        else:
+            my_dict.update({b:a})
+    return my_dict
+#result for 13
+def get_two_lists(list1, list2):
+    if len(list1) == len(list2):
+       my_dict = dict(zip(list1, list2))
+    return my_dict
+    return none
+#result for 14
+
+
+
+
+
+
