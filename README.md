@@ -1,1 +1,1 @@
-# Dictionary-exersices
+# Dictionary-exers
